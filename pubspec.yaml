@@ -1,0 +1,47 @@
+name: elmorsy_care
+description: "ELmorsy Care - Home Nursing Service Flutter Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # إدارة الحالة المتطورة
+  flutter_riverpod: ^2.4.9
+  
+  # تكامل Firebase والخدمات السحابية
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.3
+  
+  # الملاحة وتكامل الخرائط
+  google_maps_flutter: ^2.5.3
+  geolocator: ^10.1.0
+  
+  # التصميم والتحريكات والواجهة
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  intl: ^0.19.0
+  url_launcher: ^6.2.2
+  shimmer: ^3.0.0
+  animate_do: ^3.1.2 # مكتبة تحريكات ناعمة جداً
+  font_awesome_flutter: ^10.6.0
+  vibration: ^1.8.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  # تفعيل الخطوط واللغة العربية بشكل افتراضي
