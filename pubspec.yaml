@@ -27,7 +27,7 @@ dependencies:
   # التصميم والتحريكات والواجهة
   google_fonts: ^6.1.0
   flutter_svg: ^2.0.9
-  intl: ^0.20.2
+  intl: ^0.19.0
   url_launcher: ^6.2.2
   shimmer: ^3.0.0
   animate_do: ^3.1.2 # مكتبة تحريكات ناعمة جداً

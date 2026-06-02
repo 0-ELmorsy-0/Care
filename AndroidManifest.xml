@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elmorsy.care">
+    
+    <!-- الأذونات اللازمة لتطبيق الرعاية الطبية والخرائط والاتصالات -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:label="المرسي كير • Elmorsy Care"
+        android:icon="@mipmap/ic_launcher">
+        
+        <!-- مفاتيح خرائط جوجل لخدمة تتبع الممرضين ولخرائط السيرفر -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyYourGoogleMapKeyHere"/>
+            
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
